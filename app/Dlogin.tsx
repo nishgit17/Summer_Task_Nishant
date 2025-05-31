@@ -12,7 +12,6 @@ const Dlogin = () => {
         resizeMode="cover"
       />
 
-      {/* Content Section */}
       <View className="flex items-center px-4 pt-6">
         <Text className="text-4xl font-bold text-center mb-2 mt-12">
           Drive and Earn up to 

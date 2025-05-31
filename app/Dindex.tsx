@@ -7,11 +7,9 @@ const Dindex = () => {
   
     useEffect(() => {
       const timer = setTimeout(() => {
-        // Navigate to the 'Login' route
         navigation.navigate('Dlogin');
-      }, 2000); // Adjust the delay (in milliseconds) as needed
-  
-      // Cleanup function to clear the timer if the component unmounts
+      }, 2000); 
+
       return () => clearTimeout(timer);
     }, [navigation]);
 

@@ -1,4 +1,5 @@
-import { useRouter, useLocalSearchParams } from 'expo-router';
+{/*
+import { useLocalSearchParams, useRouter } from 'expo-router';
 import React, { useState } from 'react';
 import { Text, TextInput, TouchableOpacity, View } from 'react-native';
 
@@ -19,7 +20,7 @@ const Verify = () => {
       </Text>
 
       <View className='items-center'>
-        <Text className="text-gray-500 mb-2">Password: {email}</Text>
+        <Text className="text-gray-500 mb-2">Email: {email}</Text>
         <TextInput
           className="border border-black h-12 w-96 rounded-lg px-4 mt-4 mb-64"
           placeholder="Password"
@@ -40,3 +41,4 @@ const Verify = () => {
 };
 
 export default Verify;
+*/}

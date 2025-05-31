@@ -18,7 +18,6 @@ const Dverify = () => {
     try {
       await signInWithEmailAndPassword(auth, email, password);
       Alert.alert('Success', 'Logged in successfully!');
-      // TODO: Redirect to home/dashboard
     } catch (error:any) {
       Alert.alert('Login failed', error.message);
     }
@@ -31,7 +30,7 @@ const Dverify = () => {
       </Text>
 
       <View className='items-center'>
-        <Text className="text-gray-500 mb-2">Password: {email}</Text>
+        <Text className="text-gray-500 mb-2">Email: {email}</Text>
         <TextInput
           className="border border-black h-12 w-96 rounded-lg px-4 mt-4 mb-64"
           placeholder="Password"

@@ -2,26 +2,24 @@
 //ios 329804095155-b8tpp0jjvlqmh8viilms89h4lrgp33p3.apps.googleusercontent.com
 //android 329804095155-6oda1ti9qjs28kpsd74tf5au0psvl1b5.apps.googleusercontent.com
 
-import { useNavigation } from '@react-navigation/native';
-import React, { useEffect } from 'react';
+import { useRouter } from 'expo-router';
+import { useEffect } from 'react';
 import { Text, View } from 'react-native';
 
 export default function Index() {
-  const navigation = useNavigation();
+  const router = useRouter();
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      // Navigate to the 'Login' route
-      navigation.navigate('nextindex');
-    }, 1000); // Adjust the delay (in milliseconds) as needed
+      router.push('/nextindex');
+    }, 1000);
 
-    // Cleanup function to clear the timer if the component unmounts
     return () => clearTimeout(timer);
-  }, [navigation]);
+  }, [router]);
 
   return (
-    <View className="flex-1 justify-center items-center bg-yellow-400">
-      <Text className="text-7xl text-black-600 font-bold">rapido</Text>
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: '#FACC15' }}>
+      <Text style={{ fontSize: 48, fontWeight: 'bold', color: '#000' }}>rapido</Text>
     </View>
   );
 }

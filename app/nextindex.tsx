@@ -1,24 +1,23 @@
-import { useNavigation } from '@react-navigation/native';
-import React, { useEffect } from 'react';
+
+import { useRouter } from 'expo-router';
+import { useEffect } from 'react';
 import { Text, View } from 'react-native';
 
-export default function Index() {
-  const navigation = useNavigation();
+export default function Nextindex() {
+  const router = useRouter();
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      // Navigate to the 'Login' route
-      navigation.navigate('choice');
-    }, 500); // Adjust the delay (in milliseconds) as needed
+      router.push('/choice');
+    }, 1000);
 
-    // Cleanup function to clear the timer if the component unmounts
     return () => clearTimeout(timer);
-  }, [navigation]);
+  }, [router]);
 
   return (
-    <View className="flex-1 justify-center items-center bg-white">
-      <Text className="text-7xl text-black-600 font-bold">rapido</Text>
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: '#FACC15' }}>
+      <Text style={{ fontSize: 48, fontWeight: 'bold', color: '#000' }}>rapido</Text>
     </View>
   );
 }
-  
+
