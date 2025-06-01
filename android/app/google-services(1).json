@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "250202109956",
+    "project_id": "myapp-rapido",
+    "storage_bucket": "myapp-rapido.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:250202109956:android:0989ff9374c16a1f3add51",
+        "android_client_info": {
+          "package_name": "com.anonymous.Rapido"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "250202109956-8seflju0viesacffeii2t4i5tkl6gfij.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.anonymous.Rapido",
+            "certificate_hash": "a73ca67fcb538edd0f92d85d92a4b8234d787731"
+          }
+        },
+        {
+          "client_id": "250202109956-o7afv6g78q3k9grdb0pl53259ac2so5n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkjMTcqQkPvEyXF23jERO6trIrWJOpf2c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "250202109956-o7afv6g78q3k9grdb0pl53259ac2so5n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
