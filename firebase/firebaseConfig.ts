@@ -1,4 +1,5 @@
 // firebaseConfig.ts
+{/*
 import { getApps, initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
 
@@ -15,3 +16,4 @@ const app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApps()[0
 const auth = getAuth(app);
 
 export { auth };
+*/}
